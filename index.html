@@ -1,8 +1,8 @@
-<link rel="stylesheet" type="text/css" href="style.css">
 <!DOCTYPE html>
 <html>
 <head>
     <title>我的个人网页</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div id="background"></div>
@@ -12,17 +12,16 @@
         <h1>访客记录</h1>
         <p>访客数: <span id="visitor-count">加载中...</span></p>
     </div>
-<script>
-function updateDateTime() {
-    var now = new Date();
-    document.getElementById('datetime').innerHTML = now.toLocaleString();
-}
+    <script>
+        function updateDateTime() {
+            var now = new Date();
+            document.getElementById('datetime').innerHTML = now.toLocaleString();
+        }
 
-setInterval(updateDateTime, 1000);
-updateDateTime();
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
 
-// 添加用于获取访客计数的代码
-</script>
-
+        // 添加用于获取访客计数的代码
+    </script>
 </body>
 </html>
