@@ -1,0 +1,22 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#background {
+  background-image: url('background.jpg'); /* 替换为您的背景图URL */
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+}
+
+#content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.6); /* 半透明背景 */
+}
